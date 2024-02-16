@@ -8,3 +8,5 @@ RUN pip install -r /app/requirements.txt
 
 COPY . .
 
+COPY ./main.py /app/
+RUN python /app/main.py
