@@ -1,8 +1,11 @@
 import logging
 import requests
 import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler, filters
+
+load_dotenv()
 
 TG_TOKEN = os.getenv('TG_TOKEN')
 API_KEY = os.getenv('API_KEY')
